@@ -46,6 +46,7 @@ class Dotted extends Component {
 
     return (
       <svg 
+        className="paper-layout"
         width="100%" 
         height="100%"
         ref={ (ref) => this.svg = ref }>

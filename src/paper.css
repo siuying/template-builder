@@ -39,3 +39,9 @@ body { margin: 0 }
   .A4, .A5.landscape { width: 210mm }
   .A5                    { width: 148mm }
 }
+
+.paper-layout {
+  position: relative;
+  left: 0;
+  top: 0;
+}
