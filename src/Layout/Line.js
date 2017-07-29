@@ -6,17 +6,17 @@ class Line extends Component {
     let coords
     if (this.props.isHorizontal) {
       coords = {
-        x1: 0,
+        x1: this.props.startPadding,
         y1: this.props.position,
-        x2: this.props.width,
+        x2: this.props.width - this.props.endPadding,
         y2: this.props.position,
       }
     } else {
       coords = {
         x1: this.props.position,
-        y1: 0,
+        y1: this.props.startPadding,
         x2: this.props.position,
-        y2: this.props.height,
+        y2: this.props.height - this.props.endPadding,
       }
     }
     return (
@@ -28,7 +28,11 @@ class Line extends Component {
 Line.defaultProps = {
   width: 0,
   height: 0,
-  position: 0,
+
+  position: 0, // vertical position
+  startPadding: 0,    // start horizontal padding
+  endPadding: 0,      // end horizontal padding
+
   isHorizontal: true,
 
   color: '#aaa',
@@ -39,6 +43,9 @@ Line.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   position: PropTypes.number,
+  startPadding: PropTypes.number,
+  endPadding: PropTypes.number,
+
   isHorizontal: PropTypes.bool,
 
   color: PropTypes.string,

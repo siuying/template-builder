@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Overlay from './Overlay'
+import Dotted from './Layout/Dotted'
 
 class Paper extends Component {
   render() {
@@ -9,7 +9,7 @@ class Paper extends Component {
         <section 
           className="sheet" 
           style={{background: this.props.backgroundColor}}>
-          <Overlay />
+          <Dotted />
         </section>
       </div>
     )
@@ -18,7 +18,7 @@ class Paper extends Component {
 
 Paper.defaultProps = {
   size: 'A4',
-  backgroundColor: 'white'
+  backgroundColor: '#F3F0E4'
 }
 
 Paper.propTypes = {
