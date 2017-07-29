@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Paper from './Paper'
+import Paper from '../views/Paper'
 
 class App extends Component {
   render() {

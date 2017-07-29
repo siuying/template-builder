@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {convertMmToPx} from '../utils/converter'
+import {convertMmToPx} from '../../utils/converter'
 import DottedLine from './DottedLine'
 
 class Dotted extends Component {

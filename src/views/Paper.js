@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Dotted from './Layout/Dotted'
 import Ruled from './Layout/Ruled'
+import './paper.css'
 
 class Paper extends Component {
   constructor(props) {
