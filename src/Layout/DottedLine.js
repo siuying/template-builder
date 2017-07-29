@@ -11,7 +11,7 @@ class DottedLine extends Component {
       while (this.props.width > 0 && dotX < this.props.width - this.props.endPadding) {
         dots.unshift(
           (
-            <circle cx={dotX} cy={dotY} r={this.props.radius} fill={this.props.color} />
+            <circle key={`dot-${dotX}`} cx={dotX} cy={dotY} r={this.props.radius} fill={this.props.color} />
           )
         )
         dotX = dotX + this.props.dotSpace
@@ -22,7 +22,7 @@ class DottedLine extends Component {
       while (this.props.height > 0 && dotY < this.props.height - this.props.endPadding) {
         dots.unshift(
           (
-            <circle cx={dotX} cy={dotY} r={this.props.radius} fill={this.props.color} />
+            <circle key={`dot-${dotX}`} cx={dotX} cy={dotY} r={this.props.radius} fill={this.props.color} />
           )
         )
         dotY = dotY + this.props.dotSpace
